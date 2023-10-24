@@ -1,4 +1,6 @@
 TODO : fix the readme with info
+TODO : make image gallery but barely visible stacked on top and moved on scroll
+
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
