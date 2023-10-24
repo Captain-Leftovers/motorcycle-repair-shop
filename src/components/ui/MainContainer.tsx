@@ -4,8 +4,8 @@ type ContainerProps = {
 
 export default function MainContainer({ children }: ContainerProps) {
 	return (
-		<main className="grow bg-pallette-orange" >
-			<div className="py-8 w-full mx-auto max-w-7xl scroll-smooth">
+		<main className="grow" >
+			<div className="relative w-full mx-auto max-w-7xl scroll-smooth">
 				{children}
 			</div>
 		</main>

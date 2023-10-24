@@ -25,28 +25,11 @@ const config: Config = {
 					light: '#2E2E2E',
 					dark: '#141414',
 				},
-				secondary: {
-					DEFAULT: '#F2F2F2',
-					light: '#F8F8F8',
-					dark: '#EAEAEA',
+				background: {	
+					DEFAULT: '#19191a',
+					light: '#fff',
+					dark: '#19191a',
 				},
-				accent: {
-					DEFAULT: '#FFC107',
-					light: '#FFCA28',
-					dark: '#FFB300',
-				},
-				success: {
-					DEFAULT: '#4CAF50',
-					light: '#66BB6A',
-					dark: '#43A047',
-				},
-
-				info: {
-					DEFAULT: '#2196F3',
-					light: '#64B5F6',
-					dark: '#1976D2',
-				},
-
 				warning: {
 					DEFAULT: '#FF9800',
 					light: '#FFB74D',

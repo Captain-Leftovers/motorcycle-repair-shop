@@ -1,7 +1,8 @@
 
-import FeatureSection from '@/components/FeatureSection'
-import FeaturesListSection from '@/components/FeaturesListSection'
-import HeroHeaderSection from '@/components/HeroHeaderSection'
+import FeatureSection from '@/app/(routes)/(home)/components/FeatureSection'
+import FeaturesListSection from '@/app/(routes)/(home)/components/FeaturesListSection'
+import HeroHeaderSection from '@/app/(routes)/(home)/components/HeroHeaderSection'
+import Footer from '@/components/Footer'
 import MainContainer from '@/components/ui/MainContainer'
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
 			<HeroHeaderSection />
 			<FeatureSection />
 			<FeaturesListSection />
+			<Footer />
 		</MainContainer>
 	)
 }
