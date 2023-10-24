@@ -25,6 +25,12 @@ const config: Config = {
 					light: '#2E2E2E',
 					dark: '#141414',
 				},
+				text: {
+					DEFAULT: '#000000',
+					light: '#fff',
+					dark: '#fff',
+				},
+				
 				background: {	
 					DEFAULT: '#19191a',
 					light: '#fff',
