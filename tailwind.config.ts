@@ -1,21 +1,22 @@
-import type { Config } from 'tailwindcss'
-
-const config: Config = {
-	content: [
-		'./src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-		'./src/components/**/*.{js,ts,jsx,tsx,mdx}',
-		'./src/app/**/*.{js,ts,jsx,tsx,mdx}',
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: ["class"],
+  content: [
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
 	],
-	theme: {
-		container: {
-			center: true,
-			padding: "2rem",
-			screens: {
-			  "2xl": "1400px",
-			},
-		  },
-		extend: {
-			backgroundImage: {
+  theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
+    extend: {
+      backgroundImage: {
 				'gradient-radial':
 					'linear-gradient(82deg, var(--tw-gradient-stops))',
 			},
@@ -47,22 +48,21 @@ const config: Config = {
           'orange-red': '#ff4b28',
 				},
 			},
-			keyframes: {
-				"accordion-down": {
-				  from: { height: '0' },
-				  to: { height: "var(--radix-accordion-content-height)" },
-				},
-				"accordion-up": {
-				  from: { height: "var(--radix-accordion-content-height)" },
-				  to: { height: '0' },
-				},
-			  },
-			  animation: {
-				"accordion-down": "accordion-down 0.2s ease-out",
-				"accordion-up": "accordion-up 0.2s ease-out",
-			  },
-		},
-	},
-	plugins: [require("tailwindcss-animate")],
+      keyframes: {
+        "accordion-down": {
+          from: { height: 0 },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: 0 },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+      },
+    },
+  },
+  plugins: [require("tailwindcss-animate")],
 }
-export default config

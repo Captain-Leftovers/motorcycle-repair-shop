@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import heroImage from '/public/images/hero-image.jpg'
 import MainContainer from '@/components/ui/MainContainer'
-import { Button } from '@/components/ui/Button'
+import  {Button} from '@/components/ui/Button'
 
 export default function HeroHeaderSection() {
 	return (
@@ -14,7 +14,7 @@ export default function HeroHeaderSection() {
 					<p>
 						Trust our experienced to get your motorcycle back on the road in no time.
 					</p>
-					<Button variant={'outline'} >Contact us</Button>
+					<Button variant={'destructive'} className='' >Contact us</Button>
 				</div>
 				<div className="h-3/4 relative">
 					<Image

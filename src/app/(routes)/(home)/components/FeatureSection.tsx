@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import featureImage from '/public/images/feature.jpg'
 import MainContainer from '@/components/ui/MainContainer'
-import { Button } from '@/components/ui/Button'
+import {Button} from '@/components/ui/Button'
 
 export default function FeatureSection() {
 	return (
@@ -18,8 +18,8 @@ export default function FeatureSection() {
 						our team of skilled technicians is here to help.
 					</p>
 					<div  className='space-x-4'>
-						<Button variant={'ghost'} >Learn More</Button>
-						<Button variant={'outline'} >Contact Us</Button>
+						<Button  variant={'outline'} className='' >Learn More</Button>
+						<Button  variant={'destructive'} className=''>Contact Us</Button>
 					</div>
 				</div>
 				<div className="w-[47%] relative">
