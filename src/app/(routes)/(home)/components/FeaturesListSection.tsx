@@ -4,7 +4,7 @@ import MainContainer from '@/components/ui/MainContainer'
 
 export default function FeaturesListSection() {
 	return (
-		<MainContainer className="sticky top-28 z-20 bg-slate-600 snap-end">
+		<MainContainer className="sticky top-28 z-20 bg-slate-600">
 			<section className="flex justify-between bg-slate-600 h-[calc(100vh-7rem)] text-text-light pt-20 pb-10">
 				<div className="w-[47%] relative">
 					<Image

@@ -6,7 +6,7 @@ import Navbar from '@/components/Navbar'
 
 export default function Home() {
 	return (
-		<main className="relative h-screen snap-y snap-mandatory overflow-auto bg-blue-400 z-50">
+		<main className="relative h-screen overflow-auto">
 			<Navbar />
 			<HeroHeaderSection />
 			<FeatureSection />

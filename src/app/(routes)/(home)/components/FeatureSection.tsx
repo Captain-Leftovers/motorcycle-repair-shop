@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/Button'
 
 export default function FeatureSection() {
 	return (
-		<MainContainer className="sticky top-24 bg-background-dark z-10 snap-end">
+		<MainContainer className="sticky top-24 bg-background-dark z-10">
 			<section className=" flex justify-between bg-background h-[calc(100vh-6rem)] text-text-light pt-20 pb-10">
 				<div className="w-[47%] flex flex-col justify-center gap-8">
 					<h1 className="text-4xl">
