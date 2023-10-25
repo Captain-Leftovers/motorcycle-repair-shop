@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/Button'
 
 export default function HeroHeaderSection() {
 	return (
-		<MainContainer className="sticky top-20 bg-background-light">
+		<MainContainer className="sticky top-16 bg-background-light">
 			<section className="flex flex-col justify-around bg-background-light h-[calc(100vh-5rem)] text-black py-10 font-bold">
 				<div className=" flex flex-col justify-around items-center grow">
 					<h1 className="text-4xl">
