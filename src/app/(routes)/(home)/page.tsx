@@ -6,7 +6,7 @@ import Navbar from '@/components/Navbar'
 
 export default function Home() {
 	return (
-		<main className="relative snap-y snap-mandatory overflow-auto">
+		<main className="relative snap-y snap-mandatory overflow-auto scroll-pt-20">
 			<Navbar />
 			<HeroHeaderSection />
 			<FeatureSection />
