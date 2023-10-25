@@ -17,9 +17,9 @@ export default function FeaturesListSection() {
 				</div>
 				<ul className="w-[47%] flex flex-col justify-around">
 					<li>
-						<h1 className="text-4xl">
+						<h2 className="text-4xl">
 							Experienced Technicians, Quality Parts
-						</h1>
+						</h2>
 						<p>
 							Our repair shop is staffed with experienced
 							technicians who are skilled in handling all types of

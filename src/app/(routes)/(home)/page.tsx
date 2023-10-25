@@ -3,6 +3,7 @@ import FeaturesListSection from '@/app/(routes)/(home)/components/FeaturesListSe
 import HeroHeaderSection from '@/app/(routes)/(home)/components/HeroHeaderSection'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
+import HomeGallery from './components/HomeGallery'
 
 export default function Home() {
 	return (
@@ -11,6 +12,7 @@ export default function Home() {
 			<HeroHeaderSection />
 			<FeatureSection />
 			<FeaturesListSection />
+			<HomeGallery />
 			<Footer />
 		</main>
 	)
