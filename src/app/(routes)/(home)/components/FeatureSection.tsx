@@ -9,8 +9,7 @@ export default function FeatureSection() {
 			<section className=" flex justify-between bg-background h-[calc(100vh-6rem)] text-text-light pt-20 pb-10">
 				<div className="w-[47%] flex flex-col justify-center gap-8">
 					<h1 className="text-4xl">
-						{' '}
-						Expert Motorcycle Repair Services You Can Trust{' '}
+						Expert Motorcycle Repair Services You Can Trust
 					</h1>
 					<p>
 						At our motorcycle repair shop, we offer a wide range of

@@ -33,10 +33,10 @@ export default function FeaturesListSection() {
 						<h1 className="text-4xl">Fast Service</h1>
 						<p>
 							We understand that you want to get back on the road
-							as soon as possible. That's why we prioritize fast
+							as soon as possible. That&apos;s why we prioritize fast
 							service and strive to complete repairs in a timely
 							manner. Our efficient processes and dedicated team
-							ensure that you won't have to wait long to get your
+							ensure that you won&apos;t have to wait long to get your
 							motorcycle back in top shape.
 						</p>
 					</li>
