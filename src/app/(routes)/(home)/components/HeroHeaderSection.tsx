@@ -1,43 +1,33 @@
 import Image from 'next/image'
 import heroImage from '/public/images/hero-image.jpg'
-import Navbar from '@/components/Navbar'
+import MainContainer from '@/components/ui/MainContainer'
+import { Button } from '@/components/ui/Button'
 
 export default function HeroHeaderSection() {
 	return (
-		<>
-			<div
-				className="sticky top-0 h-screen overflow-hidden bg-background-light"
-				style={{
-					boxShadow: '0 0 0 100vmax #fff',
-					clipPath: 'inset(0 -100vmax)',
-				}}
-			>
-				<section className=" flex flex-col h-screen -z-20">
-					<Navbar />
-					<div className=' flex flex-col justify-around grow'>
-						<div className="space-y-4">
-							<h1 className="text-5xl text-center">
-								Welcome to our Motorcycle
-								<br />
-								Repair Shop
-							</h1>
-							<p className="text-center">
-								We specialize in repairing motorcycles and have
-								a wide selection of bikes for sale.
-							</p>
-						</div>
-						<div className="relative h-[480px] sm:h-[600px]">
-							<Image
-								src={heroImage}
-								alt=""
-								fill
-								placeholder="blur"
-								className="object-cover object-center"
-							/>
-						</div>
-					</div>
-				</section>
-			</div>
-		</>
+		<MainContainer className="sticky top-20 bg-background-light snap-end">
+			<section className="flex flex-col justify-around bg-background-light h-[calc(100vh-5rem)] text-black py-10 font-bold">
+				<div className=" flex flex-col justify-around items-center grow">
+					<h1 className="text-4xl">
+						Expert Motorcycle Repairs Done Right at Our Shop
+					</h1>
+					<p>
+						Trust our experienced to get your motorcycle back on the road in no time.
+					</p>
+					<Button variant={'outline'} >Contact us</Button>
+				</div>
+				<div className="h-3/4 relative">
+					<Image
+						src={heroImage}
+						fill
+						alt=""
+						sizes="100%"
+						className="object-cover object-top"
+						priority
+					/>
+				</div>
+
+			</section>
+		</MainContainer>
 	)
 }

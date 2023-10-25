@@ -1,19 +1,18 @@
-import { todo } from "node:test"
+import MainContainer from './ui/MainContainer'
 
 export default function Footer() {
 	return (
-		<footer className="bg-white " style={{
-			boxShadow: '0 0 0 100vmax #fff',
-			clipPath: 'inset(0 -100vmax)',
-		}}>
-			<div className="mx-auto py-10">
-				<p className="text-center text-xs text-black">
-					Moto Revive &copy; {new Date().getFullYear()} Motorcycle repair
-				</p>
-			</div>
-		</footer>
+		<MainContainer className="sticky top-0 bg-amber-300 z-50 snap-end">
+			<footer className="bg-amber-300">
+				<div className="mx-auto py-6">
+					<p className="text-center text-xs text-black">
+						Moto Revive &copy; {new Date().getFullYear()} Motorcycle
+						repair
+					</p>
+				</div>
+			</footer>
+		</MainContainer>
 	)
 }
-
 
 // TODO :  footer not visible!!! fix it

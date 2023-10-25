@@ -1,25 +1,56 @@
-import Image from "next/image";
-import featureImage from '/public/images/feature.jpg'
+import Image from 'next/image'
+import featureListImage from '/public/images/featuresList.jpg'
+import MainContainer from '@/components/ui/MainContainer'
 
 export default function FeaturesListSection() {
-
-    
-
-return (
-  <section className="flex bg-pallette-orange h-[800px] text-text-light py-10" style={{'boxShadow': '0 0 0 100vmax #FF5722', 'clipPath': 'inset(0 -100vmax)'}}>
-  <div className="w-6/12 flex flex-col justify-center">
-  <h1 className="text-6xl"> Expert Motorcycle Repair Services You Can Trust </h1>
-  <p>At our motorcycle repair shop, we offer a wide range of expert repair services to keep your motorcycle running smoothly. From routine maintenance to complex repairs, our team of skilled technicians is here to help.</p>
-  </div>
-  <div className="w-6/12 relative">
-  <Image 
-  src={featureImage} 
-  fill
-  alt=""
-  sizes="100%"
-  className="object-cover object-top"
-  />
-  </div>
-</section>
-  )
+	return (
+		<MainContainer className="sticky top-28 z-20 bg-slate-600 snap-end">
+			<section className="flex justify-between bg-slate-600 h-[calc(100vh-7rem)] text-text-light pt-20 pb-10">
+				<div className="w-[47%] relative">
+					<Image
+						src={featureListImage}
+						fill
+						alt=""
+						sizes="100%"
+						className="object-cover object-top"
+					/>
+				</div>
+				<ul className="w-[47%] flex flex-col justify-around">
+					<li>
+						<h1 className="text-4xl">
+							Experienced Technicians, Quality Parts
+						</h1>
+						<p>
+							Our repair shop is staffed with experienced
+							technicians who are skilled in handling all types of
+							motorcycle repairs. We use only high-quality parts
+							to ensure the best performance and longevity for
+							your bike. With our expertise, you can trust that
+							your motorcycle is in good hands.
+						</p>
+					</li>
+					<li>
+						<h1 className="text-4xl">Fast Service</h1>
+						<p>
+							We understand that you want to get back on the road
+							as soon as possible. That's why we prioritize fast
+							service and strive to complete repairs in a timely
+							manner. Our efficient processes and dedicated team
+							ensure that you won't have to wait long to get your
+							motorcycle back in top shape.
+						</p>
+					</li>
+					<li>
+						<h1 className="text-4xl">Motorcycles for Sale</h1>
+						<p>
+							We also sell motorcycles. If you are looking for a
+							motorcycle, check out our inventory.If you have any
+							questions about our inventory, feel free to contact
+							us.
+						</p>
+					</li>
+				</ul>
+			</section>
+		</MainContainer>
+	)
 }

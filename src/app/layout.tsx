@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn("flex flex-col h-screen overflow-y-scroll scroll-smooth" ,inter.className)}>
+      <body className={cn(" flex flex-col h-screen overflow-y-scroll scroll-smooth" ,inter.className)}>
         {children}
         </body>
     </html>
