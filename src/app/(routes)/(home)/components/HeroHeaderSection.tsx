@@ -2,11 +2,13 @@ import Image from 'next/image'
 import heroImage from '/public/images/hero-image.jpg'
 import MainContainer from '@/components/ui/MainContainer'
 import  {Button} from '@/components/ui/Button'
+import { Triangle } from 'lucide-react'
+
 
 export default function HeroHeaderSection() {
 	return (
 		<MainContainer className="sticky top-16 bg-background-light">
-			<section className="flex flex-col justify-around bg-background-light h-[calc(100vh-5rem)] text-black py-10 font-bold">
+			<section className="flex flex-col justify-around h-[calc(100vh-4rem)] text-black py-10 font-bold">
 				<div className=" flex flex-col justify-around items-center grow">
 					<h1 className="text-4xl">
 						Expert Motorcycle Repairs Done Right at Our Shop
@@ -26,7 +28,6 @@ export default function HeroHeaderSection() {
 						priority
 					/>
 				</div>
-
 			</section>
 		</MainContainer>
 	)

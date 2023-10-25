@@ -4,8 +4,8 @@ import MainContainer from '@/components/ui/MainContainer'
 
 export default function FeaturesListSection() {
 	return (
-		<MainContainer className="sticky top-24 z-20 bg-slate-600">
-			<section className="flex justify-between bg-slate-600 h-[calc(100vh-7rem)] text-text-light pt-20 pb-10">
+		<MainContainer className="sticky top-24 z-20 bg-slate-600 ">
+			<section className=" flex justify-between h-[calc(100vh-6rem)] text-text-light pt-20 pb-10">
 				<div className="w-[47%] relative">
 					<Image
 						src={featureListImage}
@@ -33,11 +33,11 @@ export default function FeaturesListSection() {
 						<h1 className="text-4xl">Fast Service</h1>
 						<p>
 							We understand that you want to get back on the road
-							as soon as possible. That&apos;s why we prioritize fast
-							service and strive to complete repairs in a timely
-							manner. Our efficient processes and dedicated team
-							ensure that you won&apos;t have to wait long to get your
-							motorcycle back in top shape.
+							as soon as possible. That&apos;s why we prioritize
+							fast service and strive to complete repairs in a
+							timely manner. Our efficient processes and dedicated
+							team ensure that you won&apos;t have to wait long to
+							get your motorcycle back in top shape.
 						</p>
 					</li>
 					<li>
