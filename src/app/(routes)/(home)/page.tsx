@@ -7,7 +7,7 @@ import HomeGallery from './components/HomeGallery'
 
 export default function Home() {
 	return (
-		<main className="relative h-screen overflow-auto">
+		<main className="relative h-screen overflow-auto snap-mandatory snap-y snap-normal">
 			<Navbar />
 			<HeroHeaderSection />
 			<FeatureSection />

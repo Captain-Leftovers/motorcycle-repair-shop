@@ -27,8 +27,8 @@ const images = [
 type HomeGalleryProps = {}
 export default function HomeGallery({}: HomeGalleryProps) {
 	return (
-		<MainContainer className="sticky top-28 bg-stone-200 z-30">
-			<section className="flex justify-between items-center bg-transparent w-full h-[calc(100vh-7rem)] text-black bg-blue-200 py-10 font-bold">
+		<MainContainer className="sticky top-0 bg-stone-200 z-30 snap-start h-screen">
+			<section className="flex justify-between items-center bg-transparent w-full  text-black bg-blue-200 py-10 font-bold">
 				
 			<div className="w-[47%] flex flex-col justify-center gap-8">
 					<h2 className="text-4xl">
