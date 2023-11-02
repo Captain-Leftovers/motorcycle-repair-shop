@@ -5,8 +5,8 @@ import {Button} from '@/components/ui/Button'
 
 export default function FeatureSection() {
 	return (
-		<MainContainer className="sticky top-0 bg-background-dark z-10 snap-start h-screen">
-			<section className=" flex justify-between  text-text-light pt-20 pb-10">
+		<MainContainer className="sticky top-20 bg-background-dark z-10">
+			<section className=" flex justify-between h-[calc(100vh-5rem)] text-text-light py-10">
 			
 				<div className="w-[47%] flex flex-col justify-center gap-8">
 					<h2 className="text-4xl">
@@ -19,8 +19,8 @@ export default function FeatureSection() {
 						our team of skilled technicians is here to help.
 					</p>
 					<div  className='space-x-4'>
-						<Button  variant={'outline'} className='' >Learn More</Button>
-						<Button  variant={'destructive'} className=''>Contact Us</Button>
+						<Button  variant={'destructive'} className='' >Learn More</Button>
+						<Button  variant={'outline'} className=''>Contact Us</Button>
 					</div>
 				</div>
 				<div className="w-[47%] relative">

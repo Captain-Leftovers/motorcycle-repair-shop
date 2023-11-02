@@ -2,7 +2,7 @@ import MainContainer from '@/components/ui/MainContainer'
 import Carousel from '@/components/ImageCarousel/Carousel'
 import { Button } from '@/components/ui/Button'
 import Image from 'next/image'
-import motoSale from '/public/images/motoGalleryH1.jpg'
+import motoSale from '/public/images/forSale.png'
 
 const images = [
 	{
@@ -27,38 +27,34 @@ const images = [
 type HomeGalleryProps = {}
 export default function HomeGallery({}: HomeGalleryProps) {
 	return (
-		<MainContainer className="sticky top-0 bg-stone-200 z-30 snap-start h-screen">
-			<section className="flex justify-between items-center bg-transparent w-full  text-black bg-blue-200 py-10 font-bold">
-				
-			<div className="w-[47%] flex flex-col justify-center gap-8">
+		<MainContainer className="sticky top-28 bg-stone-200 z-30">
+			<section className="flex justify-between items-center bg-transparent w-full h-[calc(100vh-7rem)] text-black py-10 font-bold">
+				<div className="w-[47%] flex flex-col justify-center gap-8 h-full">
 					<h2 className="text-4xl">
-						Expert Motorcycle Repair Services You Can Trust
+						Browse our available motorcycles
 					</h2>
-					<p>
-						At our motorcycle repair shop, we offer a wide range of
-						expert repair services to keep your motorcycle running
-						smoothly. From routine maintenance to complex repairs,
-						our team of skilled technicians is here to help.
-					</p>
-					<div  className='space-x-4'>
-						<Button  variant={'outline'} className='' >Learn More</Button>
-						<Button  variant={'destructive'} className=''>Contact Us</Button>
+					<p></p>
+					<div className="space-x-4">
+						<Button variant={'destructive'} className="">
+							View Available Motorcycles
+						</Button>
+						<Button variant={'outline'} className="">
+							Contact Us
+						</Button>
 					</div>
 				</div>
-				<div className="w-[47%] relative">
-					<Image
-						src={motoSale}
-						fill
-						alt=""
-						sizes="100%"
-						className="object-cover object-center"
-					/>
+				<div className="w-[47%] h-full relative">
+						<Image
+							src={motoSale}
+							alt=""
+							fill
+							sizes="100%"
+							className="object-cover object-center"
+						/>
 				</div>
 			</section>
 		</MainContainer>
 	)
 }
-
-
 
 //TODO see why image not showing
